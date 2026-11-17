@@ -1,0 +1,58 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\81910\\.ohos\\config\\default_harmony-sdk_3Fy-E-UZm-n2_fV7FBlnlwMgd_ePe6Kc9jlLfI0Ymvs=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B62E0276847112926CD48302D0BA48387DFAE655975240F6586B2355D3C6159829B1ACCEEFB02CC",
+          "profile": "C:\\Users\\81910\\.ohos\\config\\default_harmony-sdk_3Fy-E-UZm-n2_fV7FBlnlwMgd_ePe6Kc9jlLfI0Ymvs=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\81910\\.ohos\\config\\default_harmony-sdk_3Fy-E-UZm-n2_fV7FBlnlwMgd_ePe6Kc9jlLfI0Ymvs=.p12",
+          "storePassword": "0000001BD3C0F8DED3112EE9B5D733AD1071E4F2ECFC601E2E8695C774CECAE3F1E8FA1E03E55391DCABFC"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gravityengine",
+      "srcPath": "./gravityengine",
+    }
+  ]
+}
